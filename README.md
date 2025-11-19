@@ -1,0 +1,1 @@
+# beegone-pest-specs
