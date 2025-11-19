@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carpenter Bee | Bee-Gone Termite & Pest Control</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  /* Base Styles */
+  * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Roboto', sans-serif; }
+  body { line-height: 1.6; color: #333; background: #f9f9f9; }
+  a { text-decoration: none; color: #fff; }
+
+  /* Hero Section */
+  .hero { position: relative; height: 400px; background: url('https://beegonepests.com/wp-content/uploads/eastern-carpenter-bee-hero.jpg') center/cover no-repeat; display: flex; align-items: center; justify-content: center; }
+  .hero h1 { background: rgba(0,0,0,0.4); padding: 20px 30px; font-size: 3rem; color: #fff; text-align: center; border-radius: 10px; text-shadow: 2px 2px 8px rgba(0,0,0,0.7); }
+
+  /* Container */
+  .container { width: 90%; max-width: 1200px; margin: 2rem auto; display: flex; flex-wrap: wrap; gap: 2rem; }
+
+  /* Sidebar / Quick Facts */
+  .sidebar { flex: 1 1 300px; background: #fff; padding: 1.5rem; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); position: sticky; top: 20px; height: fit-content; }
+  .sidebar h2 { color: #333; margin-bottom: 1rem; }
+  .sidebar table { width: 100%; border-collapse: collapse; }
+  .sidebar table td { padding: 0.5rem 0; vertical-align: top; }
+  .sidebar table td:first-child { font-weight: bold; width: 40%; }
+
+  /* Main Content */
+  .main { flex: 2 1 600px; }
+  .section { background: #fff; padding: 1.5rem; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); margin-bottom: 2rem; }
+  .section h2 { color: #333; margin-bottom: 1rem; }
+  .section img { width: 100%; border-radius: 10px; margin-bottom: 1rem; }
+
+  /* Three-step plan */
+  .steps { display: flex; gap: 1rem; flex-wrap: wrap; }
+  .step { flex: 1 1 30%; background: linear-gradient(145deg, #FFF8E1, #F9F3DC); border: 1px solid #F9CA07; color: #333; padding: 1.5rem; border-radius: 12px; text-align: center; box-shadow: 0 6px 15px rgba(0,0,0,0.1); transition: transform 0.3s, box-shadow 0.3s; }
+  .step:hover { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(0,0,0,0.15); }
+  .step h3 { margin-bottom: 0.5rem; color: #333; }
+
+  /* Accordion */
+  .accordion { display: flex; flex-direction: column; gap: 1rem; }
+  .accordion-item { background: #fff; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); overflow: hidden; transition: all 0.3s ease; }
+  .accordion-header { padding: 1rem 1.5rem; cursor: pointer; background: #F9CA07; color: #333; font-weight: bold; transition: background 0.3s; border-radius: 10px; display: flex; justify-content: space-between; align-items: center; }
+  .accordion-header:hover { background: #f7b800; }
+  .accordion-header::after { content: '+'; font-weight: bold; transition: transform 0.3s; }
+  .accordion-header.active::after { content: '−'; transform: rotate(0deg); }
+.accordion-content {
+  height: 0;
+  overflow: hidden;
+  padding: 0 1.5rem; /* closed state: no vertical padding */
+  background: #fff;
+  transition: height 0.3s ease, padding 0.3s ease;
+}
+
+.accordion-content.open {
+  padding: 1.5rem 1.5rem 2rem 1.5rem; /* top: 1.5rem, bottom: 2rem, sides: 1.5rem */
+}
+
+.accordion-content p,
+.accordion-content ul {
+  margin-top: 0.5rem; /* spacing from header */
+  margin-bottom: 1rem;
+}
+
+.accordion-content ul li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+
+  /* CTA Banner */
+  .cta { background: #1A1A1A; color: #F9CA07; text-align: center; padding: 2rem; border-radius: 10px; margin: 2rem 0; }
+  .cta a { background: #F9CA07; color: #000; padding: 0.8rem 1.5rem; border-radius: 5px; font-weight: bold; display: inline-block; margin-top: 1rem; transition: background 0.3s; }
+  .cta a:hover { background: #e0b800; }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .container { flex-direction: column; }
+    .steps { flex-direction: column; }
+  }
+</style>
+</head>
+<body>
+
+<!-- Hero -->
+<section class="hero">
+  <h1>Carpenter Bee — “The Deck Destroyer”</h1>
+</section>
+
+<!-- Container -->
+<div class="container">
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <h2>Quick Facts</h2>
+    <table>
+      <tr><td>Common Name:</td><td>Carpenter Bee</td></tr>
+      <tr><td>Also Known As:</td><td>Wood Bees, Big Buzzers, “That Bee That Stares You Down”</td></tr>
+      <tr><td>Scientific Type:</td><td>Xylocopa virginica</td></tr>
+      <tr><td>Nickname:</td><td>The Deck Destroyer</td></tr>
+      <tr><td>Active Season (NJ):</td><td>April – August</td></tr>
+      <tr><td>Found In:</td><td>Deck railings, fascia boards, fences, pergolas, sheds, and any unpainted or untreated wood</td></tr>
+      <tr><td>Threat Level:</td><td>🟡 Moderate — rarely sting, but cause costly structural damage</td></tr>
+    </table>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="main">
+
+    <!-- Behavior Section -->
+    <section class="section">
+  <h2>Behavior Report & Common Signs</h2>
+  <img src="https://d34hmiuaex7c0.cloudfront.net/6314/uploads/page_featured_img_1762543159668.jpg" alt="Carpenter Bee on Wood">
+  <p style="margin-bottom: 1rem; line-height: 1.7;">
+    Solitary bees that bore near-perfect round holes into soft or weathered wood to lay eggs. They don’t eat wood—they tunnel it, leaving sawdust trails and buzzing like tiny power tools. Males hover aggressively (but can’t sting); females do the drilling.
+  </p>
+  <ul style="margin-left: 1.5rem; padding-left: 1rem; list-style-type: disc; line-height: 1.6; color: #333;">
+    <li>Perfect ½-inch round holes in wood</li>
+    <li>Sawdust (frass) below beams, decks, or railings; loud, low buzzing near wooden structures</li>
+    <li>Bees “patrolling” the same area daily</li>
+  </ul>
+</section>
+
+
+    <!-- Problem Section -->
+    <section class="section">
+      <h2>Why It’s a Problem</h2>
+      <img src="https://beegonepests.com/wp-content/uploads/bee-1-960x540.jpg" alt="Damaged Wood by Carpenter Bee">
+      <p>Over time, their tunnels weaken decks, trim, and siding—especially if the same holes are reused each year. Woodpeckers often add insult to injury by pecking for larvae.</p>
+    </section>
+
+    <!-- Treatment Plan -->
+    <section class="section">
+      <h2>Bee-Gone’s Plan of Attack</h2>
+      <div class="steps">
+        <div class="step">
+          <h3>Inspect</h3>
+          <p>Identify active tunnels and potential nesting zones.</p>
+        </div>
+        <div class="step">
+          <h3>Treat</h3>
+          <p>Apply safe, targeted residual treatments to kill current bees and larvae.</p>
+        </div>
+        <div class="step">
+          <h3>Protect</h3>
+          <p>Seal entry holes, repair damage, and treat exposed wood with a repellant coating.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Prevention / Fun Fact Accordion -->
+    <section class="section accordion">
+      <div class="accordion-item">
+        <div class="accordion-header">Prevention Tips</div>
+        <div class="accordion-content">
+          <ul>
+            <li>Paint or seal unfinished wood—bees prefer bare timber.</li>
+            <li>Install vinyl or composite trim if remodeling.</li>
+            <li>Schedule annual spring inspections before activity peaks.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <div class="accordion-header">Fun Fact</div>
+        <div class="accordion-content">
+          <p>Male carpenter bees have no stinger, but act like they own the block. Think of them as Jersey’s loudest landlords.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <div class="accordion-header">Local Insight</div>
+        <div class="accordion-content">
+          <p>Most active in coastal NJ towns like Middletown, Toms River, and Freehold where decks and docks abound. Homeowners often confuse them with bumblebees—but these guys don’t just visit, they move in.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="cta">
+      <h2>If your deck’s starting to look like a bee Airbnb, it’s time to evict the tenants.</h2>
+      <a href="tel:9084682841">Call Bee-Gone Termite & Pest Control at 908-468-2841</a>
+    </section>
+
+  </main>
+</div>
+
+<script>
+  // Accordion functionality with smooth open/close and indicator
+const headers = document.querySelectorAll('.accordion-header');
+headers.forEach(header => {
+  header.addEventListener('click', () => {
+    const content = header.nextElementSibling;
+    header.classList.toggle('active');
+
+    if(content.style.height && content.style.height !== '0px') {
+      // collapse
+      content.style.height = '0';
+    } else {
+      // expand to fit content
+      content.style.height = content.scrollHeight + 'px';
+    }
+  });
+});
+
+</script>
+
+</body>
+</html>
