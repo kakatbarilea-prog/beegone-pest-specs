@@ -13,7 +13,22 @@
 
   /* Hero Section */
   .hero { position: relative; height: 400px; background: url('https://beegonepests.com/wp-content/uploads/eastern-carpenter-bee-hero.jpg') center/cover no-repeat; display: flex; align-items: center; justify-content: center; }
-  .hero h1 { background: rgba(0,0,0,0.4); padding: 20px 30px; font-size: 3rem; color: #fff; text-align: center; border-radius: 10px; text-shadow: 2px 2px 8px rgba(0,0,0,0.7); }
+  .hero h1 {
+  font-size: 3rem; /* make bigger */
+  text-align: center;
+  color: #fff;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.4); /* shadow only on letters */
+  line-height: 1.2;
+  margin: 0;
+}
+
+.hero h1 .subtitle {
+  display: block;
+  font-size: 4rem;
+  margin-top: 0.3rem;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.4); /* subtle shadow */
+}
+
 
   /* Container */
   .container { width: 90%; max-width: 1200px; margin: 2rem auto; display: flex; flex-wrap: wrap; gap: 2rem; }
@@ -84,8 +99,12 @@
 
 <!-- Hero -->
 <section class="hero">
-  <h1>Carpenter Bee — “The Deck Destroyer”</h1>
+  <h1>
+    Carpenter Bee<br>
+    <span class="subtitle">“The Deck Destroyer”</span>
+  </h1>
 </section>
+
 
 <!-- Container -->
 <div class="container">
